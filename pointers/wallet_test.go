@@ -30,7 +30,7 @@ func TestWallet(t *testing.T) {
 	})
 }
 
-func assertNoError(t *testing.T, err error) {
+func assertNoError(t testing.TB, err error) {
 	t.Helper()
 	if err != nil {
 		t.Errorf("got an error but didn't want one")
